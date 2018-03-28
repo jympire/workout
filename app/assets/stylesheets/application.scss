@@ -138,3 +138,12 @@ input[type="checkbox"]:checked:before {
 .btn.btn-save {
   padding: 10px 25px 10px 25px;
 }
+
+
+.panel.panel-default.index {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid $border;
+  max-width: 400px;
+}

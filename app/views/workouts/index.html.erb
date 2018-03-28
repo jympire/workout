@@ -1,1 +1,19 @@
-<h3>My Workout Log</h3>
+<h3><strong>My Workout Log</strong></h3>
+
+<br><br>
+
+<div id="index_workouts">
+  <% @workouts.each do |workout| %>
+    <div class="panel panel-default index">
+      <div class="container">
+        <h4>
+          <%= link_to workout.date.strftime("%A %B %d"), workout %>
+        </h4>
+        <p>
+          <span>Workout:</span>
+          <%= workout.workout %>
+        </p>
+      </div> 
+    </div>
+  <% end %>     
+</div>
